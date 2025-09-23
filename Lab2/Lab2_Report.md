@@ -1,4 +1,4 @@
-![Part4_Logisim_Bin2BCD_v2_Submodule](https://github.com/user-attachments/assets/9c8c0469-e9de-4325-b52d-9c3035970aa3)# Lab 2 Report
+# Lab 2 Report
 ## Introduction
 This lab is intended to introduce BCD numbers, adder circuit and end with a 2 digit BCD adder that uses all the learned skills
 
@@ -349,4 +349,40 @@ The Top Module of Part 4 was then uploaded onto the Development Board and the fu
 </div>
 
 ## Part V
-In Part 5, we are creating a circuit that uses the top module of Part 4 as a submodule to add 2 two-digit BCD numbers
+In Part 5, we are creating a circuit that uses the top module of Part 4 as a submodule to add 2 two-digit BCD numbers.
+
+The Video of the Simulated Circuit on Logisim can be seen below in Video 13.
+
+<div align="center">
+
+  ![Part5_Logisim_2-digit_BCD_Adder](https://github.com/user-attachments/assets/dbab01b9-7eb5-496e-87c2-e7ac465fdac1)
+  <figcaption><em>Video 13: Video of Logisim Simulation for Part 5</em></figcaption>
+</div>
+
+The corresponding code can be seen below in Figure 18.
+
+<figure>
+  <div align="center">
+    <img src="imgs_and_videos/Part5_TopModule_Code.png" alt="Screenshot of Code for Part 5" width="500">
+  </div>
+</figure>
+
+<div align="center">
+  <figcaption><em>Figure 18: Code for Part 5 </em></figcaption>
+</div>
+<br><br>
+
+The code was then uploaded to the Development Board and the working video of the board can be seen below in Video 14.
+
+<div align="center">
+
+  https://github.com/user-attachments/assets/c66f0ca7-28c9-445e-a424-cca457608f4b
+  <figcaption><em>Video 14: Video of Working Board for Part 5</em></figcaption>
+</div>
+
+<br><br>
+
+# Conclusion
+Submodules and modules are very useful in creating complex systems when the inputs and outputs are too large to realistically and accurately create a 
+gate-level circuit.
+<br><br>
