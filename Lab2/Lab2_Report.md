@@ -1,4 +1,4 @@
-# Lab 2 Report
+![Part4_Logisim_Bin2BCD_v2_Submodule](https://github.com/user-attachments/assets/9c8c0469-e9de-4325-b52d-9c3035970aa3)# Lab 2 Report
 ## Introduction
 This lab is intended to introduce BCD numbers, adder circuit and end with a 2 digit BCD adder that uses all the learned skills
 
@@ -241,3 +241,112 @@ This code was then uploaded to the Development Board and the results can be seen
 </div>
 
 <br><br>
+
+
+## Part IV
+Part 4 Creates a BCD Adder. In order to do that, many previously created submodules were used as well as new slightly improved versions of old 
+created submodules (circuitA_v2, bin_2_dec_v2) along with the new CheckBCD submodule.
+The top module of the BCD adder Simulation on Logisim can be seen below in Video 7.
+
+<div align="center">
+
+  ![Part4_Logisim_TopModule](https://github.com/user-attachments/assets/e275d574-9535-43b8-a25a-b8cbbd2d16f3)
+  <figcaption><em>Video 7: Video of BCD Adder Simulation on Logisim</em></figcaption>
+</div>
+
+<br><br>
+
+Videos 8, 9, 10, and 11 show the operations of submodules Bin2Dec_v2, CheckBCD, CircuitA_v2, and Circuit C resectively.
+
+<div align="center">
+
+  ![Part4_Logisim_Bin2BCD_v2_Submodule](https://github.com/user-attachments/assets/00f4873f-f337-4418-8988-333e473c4937)
+  <figcaption><em>Video 8: Video of Bin2Dec_v2 Submodule Simulation on Logisim</em></figcaption>
+</div>
+
+<div align="center">
+
+  ![Part4_Logisim_CheckBCD_Submodule](https://github.com/user-attachments/assets/48b4e09b-c5fe-419f-80ae-513acf031f8a)
+  <figcaption><em>Video 9: Video of CheckBCD Submodule Simulation on Logisim</em></figcaption>
+</div>
+<br><br>
+
+<div align="center">
+
+  ![Part4_Logisim_CicuitA_v2_Submodule](https://github.com/user-attachments/assets/557dae84-e03f-41bc-b42b-6fa81676f65a)
+  <figcaption><em>Video 10: Video of CircuitA_v2 Submodule Simulation on Logisim</em></figcaption>
+</div>
+
+<div align="center">
+
+  ![Part4_Logisim_CicuitC_Submodule](https://github.com/user-attachments/assets/2cc65cf8-65ca-4fd7-b80d-613e6da70ce0)
+  <figcaption><em>Video 11: Video of CircuitC Submodule Simulation on Logisim</em></figcaption>
+</div>
+
+The code for the corresponding submodules and Top Module can be seen below in Figures 14, 15, 16, 17 and 18 below.
+
+<figure>
+  <div align="center">
+    <img src="imgs_and_videos/Part4_bin_2_dec_v2_Submodule_Code.png" alt="Screenshot of Code for bin_2_dec_v2 Submodule" width="500">
+  </div>
+</figure>
+
+<div align="center">
+  <figcaption><em>Figure 14: Code for Bin2Dec_v2 Submodule of Part 4 </em></figcaption>
+</div>
+<br><br>
+
+<figure>
+  <div align="center">
+    <img src="imgs_and_videos/Part4_CheckBCD_Submodule_Code.png" alt="Screenshot of Code for bin_2_dec_v2 Submodule" width="500">
+  </div>
+</figure>
+
+<div align="center">
+  <figcaption><em>Figure 15: Code for CheckBCD Submodule of Part 4 </em></figcaption>
+</div>
+<br><br>
+
+<figure>
+  <div align="center">
+    <img src="imgs_and_videos/Part4_CircuitA_v2_Submodule_Code.png" alt="Screenshot of Code for CircuitA_v2 Submodule" width="500">
+  </div>
+</figure>
+
+<div align="center">
+  <figcaption><em>Figure 16: Code for CircuitA_v2 Submodule of Part 4 </em></figcaption>
+</div>
+<br><br>
+
+<figure>
+  <div align="center">
+    <img src="imgs_and_videos/Part4_CircuitC_Submodule_Code.png" alt="Screenshot of Code for CircuitC Submodule" width="500">
+  </div>
+</figure>
+
+<div align="center">
+  <figcaption><em>Figure 17: Code for CircuitC Submodule of Part 4 </em></figcaption>
+</div>
+<br><br>
+
+<figure>
+  <div align="center">
+    <img src="imgs_and_videos/Part4_PartIV_as_a_Submodule_Code.png" alt="Screenshot of Code for PartIV Top Module as a Submodule" width="500">
+  </div>
+</figure>
+
+<div align="center">
+  <figcaption><em>Figure 18: Code for Part 4 as a Submodule </em></figcaption>
+</div>
+<br><br>
+
+The Top Module of Part 4 was then uploaded onto the Development Board and the functioning Board can be seen below in Video 12.
+
+<div align="center">
+
+  https://github.com/user-attachments/assets/f29dcd94-90a6-485a-aa99-262bd3be2668
+  <figcaption><em>Video 12: Video of Development Board for Part 4</em></figcaption>
+</div>
+
+## Part V
+In Part 5, we are creating a circuit that uses the top module of Part 4 as a submodule to add 2 two-digit BCD numbers
