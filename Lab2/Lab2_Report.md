@@ -169,3 +169,75 @@ Next the top module was then used in the main and uploaded to the Developmenmt B
 <br><br>
 
 ## Part III
+
+Part III aims at creating a 4-bit ripple carry adder by first creating a Full adder submodule that is then cascaded 4 times to create the 4-bit adder.
+
+### a) Full Adder
+The Full-adder logisim simulation first created can be seen below in Video 4 below.
+
+<div align="center">
+  
+  ![Part3_Logisim_FullAdder](https://github.com/user-attachments/assets/d1656c74-7636-471d-b88b-c27106528712)
+  <figcaption><em>Video 4: Video of Logisim Simulation for Full Adder in Part 3</em></figcaption>
+</div>
+
+<br><br>
+
+The following was then coded using Verilog HDL and tested on the development board using switches as inputs. The code can be seen in Figure 11 and 
+the uploaded board test can be seen in Video 5.
+
+<figure>
+  <div align="center">
+    <img src="imgs_and_videos/Part3_FA_Submodule_Code.png" alt="Screenshot of Code for FA Submodule" width="500">
+  </div>
+</figure>
+
+<div align="center">
+  <figcaption><em>Figure 11: Code for FA Submodule of Part 3 </em></figcaption>
+</div>
+<br><br>
+
+<div align="center">
+  
+  https://github.com/user-attachments/assets/18a73944-6857-47d9-947c-6ad08d8105d5
+  <figcaption><em>Video 5: Video of Working Development Board for Full Adder in Part 3</em></figcaption>
+</div>
+
+<br><br>
+
+### b) 4-bit Ripple Carry Adder
+The 4-bit ripple carry adder was first created on Logisim by using 4 Full adders from a of this part of the lab. This can be seen in Figure 12.
+
+<figure>
+  <div align="center">
+    <img src="imgs_and_videos/Part3_4bit_RippleCarryAdder_Logisim.png" alt="Screenshot of Logisim for 4-bit adder" width="500">
+  </div>
+</figure>
+
+<div align="center">
+  <figcaption><em>Figure 12: Logisim for 4-bit Ripple Carry Adder of Part 3 </em></figcaption>
+</div>
+<br><br>
+
+This was then coded as shown in Figure 13.
+
+<figure>
+  <div align="center">
+    <img src="imgs_and_videos/Part3_4bit_RippleCarryAdder_Submodule_Code.png" alt="Screenshot of Code for 4-bit adder" width="500">
+  </div>
+</figure>
+
+<div align="center">
+  <figcaption><em>Figure 13: Code for 4-bit Ripple Carry Adder of Part 3 </em></figcaption>
+</div>
+<br><br>
+
+This code was then uploaded to the Development Board and the results can be seen below in Video 6.
+
+<div align="center">
+
+  https://github.com/user-attachments/assets/31051257-5c58-4cae-8944-d12606865af9
+  <figcaption><em>Video 6: Video of Working Development Board for 4-bit Ripple Carry Adder in Part 3</em></figcaption>
+</div>
+
+<br><br>
