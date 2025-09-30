@@ -36,7 +36,7 @@ The Verilog code was then written using the Quartus software. The written code c
 </figure>
 
 <div align="center">
-  <figcaption><em>Figure 1: Gated SR Latch Submodule Code </em></figcaption>
+  <figcaption><em>Figure 2: Gated SR Latch Submodule Code </em></figcaption>
 </div>
 <br><br>
 
@@ -175,3 +175,47 @@ The code was uploaded to the DE10-Lite Development board and the results can be 
 <br><br>
 
 ## Part IV
+
+In this part, we are using a gated D Latch a negative edge trigger D Flip-Flop and a positive edge trigger D Flip-Flop to make a logic circuit
+The following circuit in Figure 10 shows how the latch and flip-flops are used in this part.
+<br><br>
+
+<figure>
+  <div align="center">
+    <img src="imgs_and_videos/Part4_Circuit_Diagram.png" alt="Circuit Diagram for Part 4" width="500">
+  </div>
+</figure>
+
+<div align="center">
+  <figcaption><em>Figure 10: Circuit Diagram for Part 4</em></figcaption>
+</div>
+<br><br>
+
+The circuit was then simulated using Logisim. A video of the working circuit can be seen below in Video 6.
+
+<div align="center">
+  
+  ![Part4_Logisim_Simulation](https://github.com/user-attachments/assets/24b7c041-5282-45ed-b2d3-bb5ef33ff180)
+  <figcaption><em>Video 6: Video of Logisim Simulation for Part 4</em></figcaption>
+</div>
+<br><br>
+
+The Verilog code was then written using the Quartus software. The written code can be seen below in Figure 11.
+<figure>
+  <div align="center">
+    <img src="imgs_and_videos/Part4_main_Code.png" alt="Code for Part 4" width="500">
+  </div>
+</figure>
+
+<div align="center">
+  <figcaption><em>Figure 11: Code for Part 4 main</em></figcaption>
+</div>
+<br><br>
+
+The code was uploaded to the DE10-Lite Development board and the results can be seen below in Video 7.
+<div align="center">
+  
+  https://github.com/user-attachments/assets/fa36eb43-782b-4285-8205-a570d5ee8b0e
+  <figcaption><em>Video 7: Video of Part 4 on Development Board</em></figcaption>
+</div>
+<br><br>
