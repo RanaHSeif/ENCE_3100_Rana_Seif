@@ -68,12 +68,110 @@ The code was uploaded to the DE10-Lite Development board and the results can be 
 <div align="center">
   
   https://github.com/user-attachments/assets/2b66c7fa-5d8c-452c-8561-41122b365de1
-  <figcaption><em>Video 1: Video of Part 1 on Development Board</em></figcaption>
+  <figcaption><em>Video 2: Video of Part 1 on Development Board</em></figcaption>
 </div>
 <br><br>
 
 ## Part II: Gated D Latch
 
+In this part, we are making a gated D Latch which has 2 inputs (D, and clock) with outputs Qa and Qb where Qb is the inverse of Qa.
+
+The circuit was then simulated using Logisim. A video of the working circuit can be seen below in Video 3.
+
+<div align="center">
+  
+  ![Part2_D_Latch_Logisim_Simulation](https://github.com/user-attachments/assets/080fb3e0-d7b3-49ce-b824-96c13ae9d93f)
+  <figcaption><em>Video 3: Video of Logisim Simulation for D Latch</em></figcaption>
+</div>
+<br><br>
+
+The Verilog code was then written using the Quartus software. The written code can be seen below in Figure 5.
+<figure>
+  <div align="center">
+    <img src="imgs_and_videos/Part2_gated_D_Latch_Submodule_Code.png" alt="Gated D Latch Submodule Code" width="500">
+  </div>
+</figure>
+
+<div align="center">
+  <figcaption><em>Figure 5: Gated D Latch Submodule Code </em></figcaption>
+</div>
+<br><br>
+
+The synthesized circuit as seen in the RTL viewer can be seen below in Figure 6.
+<figure>
+  <div align="center">
+    <img src="imgs_and_videos/Gated_D_Latch_RTL_Viewer.png" alt="Gated D Latch RTL Viewer" width="500">
+  </div>
+</figure>
+
+<div align="center">
+  <figcaption><em>Figure 6: Gated D Latch RTL Viewer </em></figcaption>
+</div>
+<br><br>
+
+The main code can be seen below in Figure 7.
+<figure>
+  <div align="center">
+    <img src="imgs_and_videos/Part2_main_Code.png" alt="Gated D Latch main Code" width="500">
+  </div>
+</figure>
+
+<div align="center">
+  <figcaption><em>Figure 7: Gated D Latch main Code </em></figcaption>
+</div>
+<br><br>
+
+The code was uploaded to the DE10-Lite Development board and the results can be seen below in Video 4.
+<div align="center">
+  
+  https://github.com/user-attachments/assets/732604c6-ba43-45ab-8ca1-76af4f9fce80
+  <figcaption><em>Video 4: Video of Part 2 on Development Board</em></figcaption>
+</div>
+<br><br>
+
 ## Part III: D Flip-Flop
+
+In this part, we are making a D Flip-Flop which has 2 inputs (D, and clock) with output Q and uses two D latches with opposite clocks.
+
+The circuit was then simulated using Logisim. A video of the working circuit can be seen below in Video 5.
+
+<div align="center">
+  
+  ![Part3_D_Flip_Flop_Logisim_Simulation](https://github.com/user-attachments/assets/9731ae26-1843-4f2e-b25e-d85b21d7eb2c)
+  <figcaption><em>Video 5: Video of Logisim Simulation for D Flip-Flop</em></figcaption>
+</div>
+<br><br>
+
+The Verilog code was then written using the Quartus software. The written code can be seen below in Figure 8.
+<figure>
+  <div align="center">
+    <img src="imgs_and_videos/Part3_D_Flip_Flop_Submodule_Code.png" alt="D Flip-Flop Submodule Code" width="500">
+  </div>
+</figure>
+
+<div align="center">
+  <figcaption><em>Figure 8: D Flip-Flop Submodule Code </em></figcaption>
+</div>
+<br><br>
+
+The main code can be seen below in Figure 9.
+<figure>
+  <div align="center">
+    <img src="imgs_and_videos/Part3_main_Code.png" alt="D Flip-Flop main Code" width="500">
+  </div>
+</figure>
+
+<div align="center">
+  <figcaption><em>Figure 9: D Flip-Flop main Code </em></figcaption>
+</div>
+<br><br>
+
+The code was uploaded to the DE10-Lite Development board and the results can be seen below in Video 6.
+<div align="center">
+
+  https://github.com/user-attachments/assets/09cebaa5-f5f8-427f-a07d-9882ee0eea37
+  <figcaption><em>Video 5: Video of Part 3 on Development Board</em></figcaption>
+</div>
+<br><br>
 
 ## Part IV
