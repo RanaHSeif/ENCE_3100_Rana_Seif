@@ -71,6 +71,14 @@ Part1_Seg7_dec_Submodule
 </div>
 <br><br>
 
+The newest version of the code seen in Figure 7 was uploaded onto the development board. The captured video can be seen below in Video 2.
+
+<div align="center">
+  
+  <figcaption><em>Video 2: Video of Counter with Hex Output Uploaded to Development Board</em></figcaption>
+</div>
+<br><br>
+
 The 4 bit version of this counter was then created and synthesized. The synthesized RTL view of the ciruit can be seen below in Figure 8.
 
 <figure>
