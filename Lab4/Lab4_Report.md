@@ -51,7 +51,8 @@ been functioning correctly using the 1s counter. Video 1 shows the counter with 
 58 Logic Elements (LEs) were used to implement this circuit.
 
 <div align="center">
-  
+
+  https://github.com/user-attachments/assets/cd543dce-56e3-4d3f-bdf9-41c8cf2174bb
   <figcaption><em>Video 1: Video of T Flip Flop Counter Uploaded to Development Board</em></figcaption>
 </div>
 <br><br>
@@ -75,6 +76,7 @@ The newest version of the code seen in Figure 7 was uploaded onto the developmen
 
 <div align="center">
   
+  https://github.com/user-attachments/assets/68a4d81e-0b9c-467f-93a0-630ac243e2c7
   <figcaption><em>Video 2: Video of Counter with Hex Output Uploaded to Development Board</em></figcaption>
 </div>
 <br><br>
@@ -157,7 +159,8 @@ Figure 12 shows the top module of the following part.
 The following was synthesized and uploaded to the development to view and confirm function. The functioning board can be seen in Video 3.
 
 <div align="center">
-  
+
+  https://github.com/user-attachments/assets/8bb40385-6f78-4af6-b324-1c22cb57ddb2
   <figcaption><em>Video 3: Video of LPM Counter up to 9 Uploaded to Development Board</em></figcaption>
 </div>
 <br><br>
@@ -201,6 +204,7 @@ The following code was synthesized and uploaded to the development board. The ou
 
 <div align="center">
   
+  https://github.com/user-attachments/assets/b7c0eb6b-a2da-4eca-b0fd-4444a5049637
   <figcaption><em>Video 4: Video of Part 5 Uploaded to Development Board</em></figcaption>
 </div>
 <br><br>
