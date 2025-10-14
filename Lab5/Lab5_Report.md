@@ -152,7 +152,6 @@ The top module was then synthesized and the RTL View was generated as can be see
 <br><br>
 
 ## Part III
-
 Next, we attempted to synthesize a circuit that can carry out multiplication arithmetic by using the shift and add method using a circuit called the array multiplier.
 
 The circuit diagram for the array multiplier can be seen in Figure 11.
@@ -199,11 +198,84 @@ The RTL view for the submodule can be seen below in Figure 13.
 </figure>
 
 <div align="center">
-  <figcaption><em>Figure 8: 4-bit Array Multiplier Submodule RTL View </em></figcaption>
+  <figcaption><em>Figure 13: 4-bit Array Multiplier Submodule RTL View </em></figcaption>
+</div>
+<br><br>
+
+## Part IV
+
+On this final part, we are creating another multiplier that uses n-bit ripple carry adder. Here we are demonstrating how to create an 8-bit multiplier using
+seven levels of the n-bit adders with n = 8.
+Below in Figure 14 is the circuit diagram for a 4-bit multiplier version of the circuit we want to synthesize.
+
+<br><br>
+<figure>
+  <div align="center">
+    <img src="imgs_and_videos/Part4_Circuit_Diagram.png" alt="Part4 Circuit Diagram for 4-bit Multiplier" width="500">
+  </div>
+</figure>
+
+<div align="center">
+  <figcaption><em>Figure 14: Part4 Circuit Diagram for 4-bit Multiplier </em></figcaption>
 </div>
 <br><br>
 
 
+The full verilog code written for the 8-bit multiplier using the ripple carre adders can be seen below in Figure 15. 
 
-## Part IV
+<br><br>
+<figure>
+  <div align="center">
+    <img src="imgs_and_videos/Part4_Multiplier_8x8_Submodule_Pt1.png" alt="Array Multiplier Code Pt.1" width="500">
+  </div>
+</figure>
 
+<figure>
+  <div align="center">
+    <img src="imgs_and_videos/Part4_Multiplier_8x8_Submodule_Pt2.png" alt="8-bit Multiplier Code Pt.2" width="500">
+  </div>
+</figure>
+
+<figure>
+  <div align="center">
+    <img src="imgs_and_videos/Part4_Multiplier_8x8_Submodule_Pt3.png" alt="8-bit Multiplier Code Pt.3" width="500">
+  </div>
+</figure>
+
+<div align="center">
+  <figcaption><em>Figure 15: 8-bit Multiplier Submodule Code </em></figcaption>
+</div>
+<br><br>
+
+The RTL view for the submodule can be seen below in Figure 16.
+
+<br><br>
+<figure>
+  <div align="center">
+    <img src="imgs_and_videos/Part4_Multiplier_8x8_Submodule_RTL_Viewer.png" alt="8-bit Multiplier Submodule RTL View" width="500">
+  </div>
+</figure>
+
+<div align="center">
+  <figcaption><em>Figure 16: 8-bit Multiplier Submodule RTL View </em></figcaption>
+</div>
+<br><br>
+
+Figure 17 below shows the top module code for part 4.
+
+<figure>
+  <div align="center">
+    <img src="imgs_and_videos/Part4_TopModule_Pt1.png" alt="Part 4 Top Module Code Pt1" width="500">
+  </div>
+</figure>
+
+<figure>
+  <div align="center">
+    <img src="imgs_and_videos/Part4_TopModule_Pt2.png" alt="Part 4 Top Module Code Pt2" width="500">
+  </div>
+</figure>
+
+<div align="center">
+  <figcaption><em>Figure 17: Part 4 Top Module Code</em></figcaption>
+</div>
+<br><br>
