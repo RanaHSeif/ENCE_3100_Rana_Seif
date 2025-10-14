@@ -153,5 +153,57 @@ The top module was then synthesized and the RTL View was generated as can be see
 
 ## Part III
 
+Next, we attempted to synthesize a circuit that can carry out multiplication arithmetic by using the shift and add method using a circuit called the array multiplier.
+
+The circuit diagram for the array multiplier can be seen in Figure 11.
+
+<br><br>
+<figure>
+  <div align="center">
+    <img src="imgs_and_videos/Part3_Circuit_Diagram.png" alt="Circuit Diagram of array multiplier" width="500">
+  </div>
+</figure>
+
+<div align="center">
+  <figcaption><em>Figure 11: Circuit Diagram of array multiplier </em></figcaption>
+</div>
+<br><br
+
+The full verilog code written for the array multiplier submodule can be seen below in Figure 12. 
+
+<br><br>
+<figure>
+  <div align="center">
+    <img src="imgs_and_videos/Part3_Multiplier_4x4_Submodule_Pt1.png" alt="Array Multiplier Code Pt.1" width="500">
+  </div>
+</figure>
+
+<figure>
+  <div align="center">
+    <img src="imgs_and_videos/Part3_Multiplier_4x4_Submodule_Pt2.png" alt="Array Multiplier Code Pt.2" width="500">
+  </div>
+</figure>
+
+<div align="center">
+  <figcaption><em>Figure 12: 4-bit Array Multiplier Submodule Code </em></figcaption>
+</div>
+<br><br>
+
+The RTL view for the submodule can be seen below in Figure 13.
+
+<br><br>
+<figure>
+  <div align="center">
+    <img src="imgs_and_videos/Part3_Multiplier_4x4_Submodule_RTL_Viewer.png" alt="4-bit Array Multiplier Submodule RTL View" width="500">
+  </div>
+</figure>
+
+<div align="center">
+  <figcaption><em>Figure 8: 4-bit Array Multiplier Submodule RTL View </em></figcaption>
+</div>
+<br><br>
+
+
+
 ## Part IV
 
