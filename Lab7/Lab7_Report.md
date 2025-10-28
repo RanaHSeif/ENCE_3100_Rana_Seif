@@ -62,7 +62,6 @@ The code for the 3s Counter can be seen below in Figure 3.
 Finally, the main (Top Module) that incorporates both of thiose submodules and the UART transmitter and receiver submodules as well as the ascii conversion 
 submodule can be seen below in Figure 4. 
 
-<br><br>
 <figure>
   <div align="center">
     <img src="imgs_and_videos/main_Code_Pt1.png" alt="Main Code Pt1" width="500">
@@ -76,7 +75,7 @@ submodule can be seen below in Figure 4.
 </figure>
 
 <div align="center">
-  <figcaption><em>Figure 3: Top Module Code </em></figcaption>
+  <figcaption><em>Figure 4: Top Module Code </em></figcaption>
 </div>
 <br><br>
 
