@@ -9,12 +9,12 @@ Below, image 1 shows the state diagram of the finite state machine.
 <br><br>
 <figure>
   <div align="center">
-    <img src="imgs_and_videos/FSM_WordDetector_State_Diagram.png" alt="Finite State Machine State Diagram" width="500">
+    <img src="imgs_and_videos/Word_Detector_Diagrams.png" alt="Finite State Machine State Diagram and Top Module Diagram" width="500">
   </div>
 </figure>
 
 <div align="center">
-  <figcaption><em>Figure 1: Finite State Machine State Diagram </em></figcaption>
+  <figcaption><em>Figure 1: Finite State Machine State Diagram and Top Module Diagram </em></figcaption>
 </div>
 <br><br>
 
@@ -80,5 +80,4 @@ submodule can be seen below in Figure 4.
 <br><br>
 
 ## Final Results
-The final results can be seen below in Video 1.
-
+The final results can be seen in the video labelled "Word_Detector_Results" in the imgs_and_videos.
