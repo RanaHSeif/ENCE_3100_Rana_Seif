@@ -9,7 +9,7 @@ Below, image 1 shows the state diagram of the finite state machine.
 <br><br>
 <figure>
   <div align="center">
-    <img src="imgs_and_videos/Word_Detector_Diagrams.png" alt="Finite State Machine State Diagram and Top Module Diagram" width="500">
+    <img src="imgs_and_videos/Word_Detector_Diagrams.png" alt="Finite State Machine State Diagram and Top Module Diagram" width="900">
   </div>
 </figure>
 
