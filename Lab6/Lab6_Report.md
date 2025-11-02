@@ -59,3 +59,13 @@ which can be compared to Figure 1 to make sure that the synthesized circuit beha
   <figcaption><em>Figure 4: State Diagram as Produced by RTL Viewer </em></figcaption>
 </div>
 <br><br>
+
+## Results
+
+Video 1 below shows the video of the chess timer working on the development board.
+
+<div align="center">
+  
+  https://github.com/user-attachments/assets/3cda2548-fc36-4428-ab50-a979d12bd431
+  <figcaption><em>Video 1: Video of Board with Chess Timer Uploaded</em></figcaption>
+</div>
