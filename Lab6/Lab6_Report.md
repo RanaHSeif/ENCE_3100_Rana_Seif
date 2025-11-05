@@ -60,6 +60,30 @@ which can be compared to Figure 1 to make sure that the synthesized circuit beha
 </div>
 <br><br>
 
+## Counters
+
+The main code uses 3 different counters: Counter_1s, Counter_1 and Counter_2.
+Counter_1s is a counter submodule used to transform the 50MHz internal clock into a 1s counter that can be used to trigger Counter_1 and Counter_2.<br><br>
+
+Counter_1 and Counter_2 use the output 1s counter from the third submodule to count down from 5. Both of those couters use the submodule counter_Nbits with the parameter N set to 10
+to provide a maximum number of bits of 10 (max decimal number 2047). The limit of the value it counts down from or up to is set by the input "i_data". In our case this is set to 10'd5.
+To enable counter_Nbits to count down not up, the input "i_dir" is assigned the constant 1'b0. <br><br>
+
+This setup can be seen in the part of RTL viewer of the main showing the counters in Figure 5.
+
+<br><br>
+<figure>
+  <div align="center">
+    <img src="imgs_and_videos/Counters_RTL_Viewer.png" alt="RTL Viewer Showing Counter Connections" width="500">
+  </div>
+</figure>
+
+<div align="center">
+  <figcaption><em>Figure 5: RTL Viewer Showing Counter Connections </em></figcaption>
+</div>
+<br><br>
+
+
 ## Results
 
 Video 1 below shows the video of the chess timer working on the development board.
