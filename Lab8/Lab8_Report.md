@@ -345,7 +345,142 @@ When the code is synthesized, the RTL Viewer can be seen below in Figure 21.
 
 ## Arithmetic Logic Unit
 
+The Arithmetic Logic Unit (ALU) is a machine that handles the addition, subtraction and mathematical operations needed within the microprocessor. To do that,
+it interacts with Accumulator A, Accumulator B, and some control signals from the controller. The Logisim simulation circuit for the ALU can be seen below in Figure 22.
+
+<br><br>
+<figure>
+  <div align="center">
+    <img src="imgs_and_videos/Logisim_ALU.png" alt="Logisim Simulation for ALU" width="900">
+  </div>
+</figure>
+
+<div align="center">
+  <figcaption><em>Figure 22: Logisim Simulation for ALU </em></figcaption>
+</div>
+<br><br>
+
+Figure 23 below shows the following circuit when converted to code.
+
+<br><br>
+<figure>
+  <div align="center">
+    <img src="imgs_and_videos/Code_ALU.png" alt="Code for ALU" width="900">
+  </div>
+</figure>
+
+<div align="center">
+  <figcaption><em> Figure 23: Code for ALU </em></figcaption>
+</div>
+<br><br>
+
+When the code is synthesized, the RTL Viewer can be seen below in Figure 24.
+
+<br><br>
+<figure>
+  <div align="center">
+    <img src="imgs_and_videos/RTL_ALU.png" alt="RTL View for ALU" width="900">
+  </div>
+</figure>
+
+<div align="center">
+  <figcaption><em> Figure 24: RTL View for ALU </em></figcaption>
+</div>
+<br><br>
+
+
 ## Controller (Finite State Machine)
+
+The command set that we are coding the Controller to be able to handle is: <br><br>
+    1. NOP  ------> No Change (ex. 8'b0000_0000) <br>
+    2. ADD  ------> Adds Accumulator A to Accumulator B (ex. 8'b0001_0011) <br>
+    3. SUB  ------> Subtracts Accumulator A from Accumulator B (ex. 8'b0010_0100) <br>
+    4. OUT  ------> Outputs Data currently in Accumulator B (ex. 8'b0011_0000) <br>
+    5. IN   ------> Gets Input data from Switches (ex. 8'b0100_0000) <br>
+    6. LDA  ------> Loads number to Accumulator A (ex. 8'b0101_1001) <br>
+
+The finite state machine was not simulated directly using Logisim because Logisim lacks the ability to create state diagrams, the code however can be seen below 
+in Figure 25.
+
+<br><br>
+<figure>
+  <div align="center">
+    <img src="imgs_and_videos/Code_Controller_Pt1.png" alt="Code for Controller Pt1" width="900">
+  </div>
+</figure>
+<figure>
+  <div align="center">
+    <img src="imgs_and_videos/Code_Controller_Pt2.png" alt="Code for Controller Pt2" width="900">
+  </div>
+</figure>
+<figure>
+  <div align="center">
+    <img src="imgs_and_videos/Code_Controller_Pt3.png" alt="Code for Controller Pt3" width="900">
+  </div>
+</figure>
+<figure>
+  <div align="center">
+    <img src="imgs_and_videos/Code_Controller_Pt4.png" alt="Code for Controller Pt4" width="900">
+  </div>
+</figure>
+<figure>
+  <div align="center">
+    <img src="imgs_and_videos/Code_Controller_Pt5.png" alt="Code for Controller Pt5" width="900">
+  </div>
+</figure>
+<figure>
+  <div align="center">
+    <img src="imgs_and_videos/Code_Controller_Pt6.png" alt="Code for Controller Pt6" width="900">
+  </div>
+</figure>
+<figure>
+  <div align="center">
+    <img src="imgs_and_videos/Code_Controller_Pt7.png" alt="Code for Controller Pt7" width="900">
+  </div>
+</figure>
+<figure>
+  <div align="center">
+    <img src="imgs_and_videos/Code_Controller_Pt8.png" alt="Code for Controller Pt8" width="900">
+  </div>
+</figure>
+<figure>
+  <div align="center">
+    <img src="imgs_and_videos/Code_Controller_Pt9.png" alt="Code for Controller Pt9" width="900">
+  </div>
+</figure>
+
+<div align="center">
+  <figcaption><em> Figure 25: Code for Controller </em></figcaption>
+</div>
+<br><br>
+
+When the code is synthesized, the RTL Viewer can be seen below in Figure 26.
+
+<br><br>
+<figure>
+  <div align="center">
+    <img src="imgs_and_videos/RTL_Controller.png" alt="RTL View for Controller" width="900">
+  </div>
+</figure>
+
+<div align="center">
+  <figcaption><em> Figure 26: RTL View for Controller </em></figcaption>
+</div>
+<br><br>
+
+The state diagram was then generated and can be seen in Figure 27.
+
+<br><br>
+<figure>
+  <div align="center">
+    <img src="imgs_and_videos/STateDiagram_Controller.png" alt="State Diagram for Controller" width="900">
+  </div>
+</figure>
+
+<div align="center">
+  <figcaption><em> Figure 27: State Diagram for Controller </em></figcaption>
+</div>
+<br><br>
 
 ## Final Results
 
