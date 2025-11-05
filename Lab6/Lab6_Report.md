@@ -74,7 +74,7 @@ This setup can be seen in the part of RTL viewer of the main showing the counter
 <br><br>
 <figure>
   <div align="center">
-    <img src="imgs_and_videos/Counters_RTL_Viewer.png" alt="RTL Viewer Showing Counter Connections" width="500">
+    <img src="imgs_and_videos/Counters_RTL_Viewer.png" alt="RTL Viewer Showing Counter Connections" width="900">
   </div>
 </figure>
 
