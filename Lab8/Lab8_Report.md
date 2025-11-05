@@ -473,7 +473,7 @@ The state diagram was then generated and can be seen in Figure 27.
 <br><br>
 <figure>
   <div align="center">
-    <img src="imgs_and_videos/STateDiagram_Controller.png" alt="State Diagram for Controller" width="900">
+    <img src="imgs_and_videos/StateDiagram_Controller.png" alt="State Diagram for Controller" width="900">
   </div>
 </figure>
 
