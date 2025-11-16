@@ -305,9 +305,9 @@ This project successfully demonstrates the implementation of a real-time game sy
 
 Looking back at the five major components, four of the core functionality have been successfully implemented:
 
-✓ Interface with LED Matrix over SPI - Complete with synchronization fixes
-✓ Timer System - 0.5s timer controlling movement updates
-✓ Pseudo-Random Generator - LFSR-based dot position generation
-✓ Direction Control FSM - Four-state machine for movement
+✓ Interface with LED Matrix over SPI - Complete with synchronization fixes <br>
+✓ Timer System - 0.5s timer controlling movement updates <br>
+✓ Pseudo-Random Generator - LFSR-based dot position generation <br>
+✓ Direction Control FSM - Four-state machine for movement <br>
 
 This proved that this project is not achievable using an FPGA and creates the general framework to allow for easy incorporation of additional features.
