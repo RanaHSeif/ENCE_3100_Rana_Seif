@@ -215,11 +215,11 @@ The system employs two separate LFSR generators:
 Column Random Generator - Generates random X coordinates (0-7)
 Row Random Generator - Generates random Y coordinates (0-7)
 
-LFSRs provide a simple hardware implementation for pseudo-random number generation with minimal logic resources.
+LFSRs provide a simple hardware implementation for pseudo-random number generation with minimal logic resources. The RTL view of the dot generator can be seen below.
 
 <br><br>
 <div align="center">
-  <img src="imgs_and_videos/Snake_Dot_Generator_Overview.png" width="600" alt="Dot Generator Overview">
+  <img src="imgs_and_videos/Snake_Dot_Generator_RTL.png" width="600" alt="Dot Generator Overview">
   <p><em>Figure 12: Dot Location Generator Using Dual LFSR Architecture</em></p>
 </div>
 <br><br>
@@ -265,7 +265,7 @@ P4 → Moving Left (decrements column index)
 <br><br>
 <div align="center">
   <img src="imgs_and_videos/Snake_FSM_Implementation.png" width="600" alt="FSM Implementation">
-  <p><em>Figure 15: Move_Snake FSM Implementation for Direction Control</em></p>
+  <p><em>Figure 15: Move_Snake FSM Implementation on RTL Viewer for Direction Control</em></p>
 </div>
 <br><br>
 
