@@ -73,10 +73,10 @@ The Move_Snake submodule implements a Finite State Machine to control the snake'
 
 The FSM has four states corresponding to the four movement directions:
 
-P1 → Moving Up (W key)
-P2 → Moving Right (D key)
-P3 → Moving Down (S key)
-P4 → Moving Left (A key)
+P1 → Moving Up (W key) <br>
+P2 → Moving Right (D key) <br>
+P3 → Moving Down (S key) <br>
+P4 → Moving Left (A key) <br>
 
 The state transitions occur when valid directional input is received, with logic to prevent the snake from reversing into itself (e.g., cannot go directly from up to down or from left to right). The state 
 diagram can be seen in Figure 4.
@@ -96,12 +96,12 @@ The MAX7219 LED matrix driver IC is controlled via the SPI (Serial Peripheral In
 
 The MAX7219 IC requires specific connections for proper operation:
 
-Din - Serial Data Input
-CLK - Clock Signal
-CS (Chip Select/LOAD) - Load data signal
-VCC - Power Supply
-GND - Ground
-DOUT - Data Output (for daisy-chaining multiple displays)
+Din - Serial Data Input <br>
+CLK - Clock Signal <br>
+CS (Chip Select/LOAD) - Load data signal <br>
+VCC - Power Supply <br>
+GND - Ground <br>
+DOUT - Data Output (for daisy-chaining multiple displays) <br>
 
 The pinout diagram can be seen below in Figure 5.
 
@@ -137,8 +137,8 @@ Figure 6 shows the block diagram of how the Driver and the RAM are connected.
 
 During testing, significant issues arose with data being sent incorrectly or not appearing on the display at all. Initial hypotheses included:
 
-Clock Speed Issues - Thought the SPI clock might be too fast or too slow
-Signal Level Problems - Suspected Din, CLK, and CS voltage requirements weren't met
+Clock Speed Issues - Thought the SPI clock might be too fast or too slow <br>
+Signal Level Problems - Suspected Din, CLK, and CS voltage requirements weren't met <br>
 
 After extensive testing and debugging (including AI-assisted analysis), the root cause was identified as clock and chip select synchronization issues. The CLK and CS signals needed precise timing relationships to properly latch data into the MAX7219.
 
@@ -161,10 +161,10 @@ The game uses a timer-based system to control the refresh the data on the LED ma
 ### 0.5 Second Timer Implementation
 
 The timer is designed to generate a pulse every 0.5 seconds, which triggers the snake to move one position. The timer calculation is based on the FPGA clock frequency:
-Timer Calculation:
+Timer Calculation: <br>
 
-T_counter = 50 MHz × 0.5 s = 25,000,000 clock cycles
-Counter_Max = T_counter / 2 = 12,500,000
+T_counter = 50 MHz × 0.5 s = 25,000,000 clock cycles <br>
+Counter_Max = T_counter / 2 = 12,500,000 <br>
 
 The counter increments on each clock cycle and toggles the output when it reaches Counter_Max, creating a precise 0.5-second interval.
 Figure 8 shows the timer code where you can see the Counter_Max value.
@@ -188,7 +188,9 @@ The timer output triggers an update to the RAM, moving the snake's position by i
 
 <br><br>
 <div align="center">
-  <img src="imgs_and_videos/Snake_Moving_Point_2.png" width="600" alt="Moving Point Part 2">
+
+  ![Snake_Moving_Point_2](https://github.com/user-attachments/assets/fd5cf585-e994-4629-a8ee-acdba4fb767d)
+
   <p><em>Figure 10: Moving a Point on MAX7219 Every 0.5s - Complete Movement Implementation</em></p>
 </div>
 <br><br>
@@ -199,7 +201,9 @@ The game implements boundary checking to detect when the snake hits the walls. W
 
 <br><br>
 <div align="center">
-  <img src="imgs_and_videos/Snake_Wall_Collision.png" width="600" alt="Wall Collision">
+  
+  ![Snake_Wall_Collision](https://github.com/user-attachments/assets/19074ac4-78f0-464e-a670-05c540c6bae6)
+
   <p><em>Figure 11: Game Ends When Point Hits the Wall - Collision Detection Logic</em></p>
 </div>
 <br><br>
@@ -212,8 +216,8 @@ The game uses a Linear Feedback Shift Register (LFSR) to generate pseudo-random 
 
 The system employs two separate LFSR generators:
 
-Column Random Generator - Generates random X coordinates (0-7)
-Row Random Generator - Generates random Y coordinates (0-7)
+Column Random Generator - Generates random X coordinates (0-7) <br>
+Row Random Generator - Generates random Y coordinates (0-7) <br>
 
 LFSRs provide a simple hardware implementation for pseudo-random number generation with minimal logic resources. The RTL view of the dot generator can be seen below.
 
@@ -241,7 +245,9 @@ Initial testing used KEY[0] as the dot_en signal to manually trigger dot placeme
 
 <br><br>
 <div align="center">
-  <img src="imgs_and_videos/Snake_Dot_Placer.png" width="600" alt="Dot Placer">
+  
+  ![Snake_Dot_Placer](https://github.com/user-attachments/assets/e50d688b-e39c-40c9-a4f5-4d9b85c3118c)
+
   <p><em>Figure 14: Dot Placer with KEY[0] as Enable Signal for Testing</em></p>
 </div>
 <br><br>
@@ -257,10 +263,10 @@ updated in RAM.
 
 State Definitions:
 
-P1 → Moving Up (decrements row index)
-P2 → Moving Right (increments column index)
-P3 → Moving Down (increments row index)
-P4 → Moving Left (decrements column index)
+P1 → Moving Up (decrements row index) <br>
+P2 → Moving Right (increments column index) <br>
+P3 → Moving Down (increments row index) <br>
+P4 → Moving Left (decrements column index) <br>
 
 <br><br>
 <div align="center">
@@ -273,10 +279,10 @@ P4 → Moving Left (decrements column index)
 
 The UART interface receives ASCII characters from a serial terminal. A converter module translates these ASCII codes into direction signals that the FSM can understand:
 
-'W' (0x57) → Up signal
-'A' (0x41) → Left signal
-'S' (0x53) → Down signal
-'D' (0x44) → Right signal
+'W' (0x57) → Up signal <br>
+'A' (0x41) → Left signal <br>
+'S' (0x53) → Down signal <br>
+'D' (0x44) → Right signal <br>
 
 <br><br>
 <div align="center">
@@ -292,12 +298,12 @@ Several features were planned but not yet implemented, providing opportunities f
 
 Planned Additional Features:
 
-Dot Eating Mechanism - Incorporate the dot placer into the game so the snake can actually collect dots
-Score Tracking - Count number of dots eaten and display the score on 7-segment displays
-Snake Growth - Make the snake grow longer as it consumes more dots
-Difficulty Levels - Implement multiple timers to control different snake speeds (Easy, Medium, Hard)
-Restart Functionality - Add a button to restart the game without reprogramming
-Expanded Play Area - Daisy-chain multiple LED matrices to create a larger 16x16 or 24x24 game grid
+Dot Eating Mechanism - Incorporate the dot placer into the game so the snake can actually collect dots <br>
+Score Tracking - Count number of dots eaten and display the score on 7-segment displays <br>
+Snake Growth - Make the snake grow longer as it consumes more dots <br>
+Difficulty Levels - Implement multiple timers to control different snake speeds (Easy, Medium, Hard) <br>
+Restart Functionality - Add a button to restart the game without reprogramming <br>
+Expanded Play Area - Daisy-chain multiple LED matrices to create a larger 16x16 or 24x24 game grid <br>
 
 ## Project Summary
 
